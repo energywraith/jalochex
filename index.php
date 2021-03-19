@@ -289,36 +289,59 @@
         </section>
         <footer class="contact" id="contact-target">
             <div class="left-side">
-                <div class="brand">
-                    <img src="img/brand-icon.svg" alt="logo" class="logo">
-                    <div class="name">
-                        <h1>
-                            Jalochex
-                        </h1>
-                        <h5>
-                            Serwis komputerowy
-                        </h5>
+                <div class="about">
+                    <div class="brand">
+                        <img src="img/brand-icon.svg" alt="logo" class="logo">
+                        <div class="name">
+                            <h1>
+                                Jalochex
+                            </h1>
+                            <h5>
+                                Serwis komputerowy
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, dolores soluta deserunt labore
+                        fuga expedita facere accusamus reiciendis illo sequi molestiae modi. Alias, aperiam? Aut itaque
+                        sit est quam alias.
                     </div>
                 </div>
-                <div class="description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident eum eveniet soluta vero, ipsa
-                    quod maiores voluptate vel saepe voluptatibus!
-                </div>
+                <ul class="contact-details">
+                    <li>
+                        <img src="img/mail-icon.svg" alt="">
+                        Loremipsum@dolorsit.amet
+                    </li>
+                    <li>
+                        <img src="img/contact-icon.svg" alt="">
+                        123456789
+                    </li>
+                </ul>
             </div>
             <div class="right-side">
-                <div class="contact-detail">
-                    <img src="img/mail-icon.svg" alt="">
-                    Loremipsum@dolorsit.amet
-                </div>
-                <div class="contact-detail">
-                    <img src="img/contact-icon.svg" alt="">
-                    123456789
-                </div>
+                <h3>
+                    Skontaktuj się z nami!
+                </h3>
+                <form class="contact-form">
+                    <h5 class="errors"></h5>
+                    <h5 class="success"></h5>
+                    <label for="mail"> Twój email: </label>
+                    <input type="email" name="mail" id="userMail">
+                    <label for="phoneNumber"> Twój numer telefonu: </label>
+                    <input type="tel" name="phoneNumber" id="userPhoneNumber" pattern="[0-9]{9}">
+                    <label for="message" class="required"> Twoja wiadomość: </label>
+                    <textarea name="message" id="userMessage" required></textarea>
+                    <button id="sendEmail" onclick="" type="submit"> Wyślij wiadomość </button>
+                </form>
             </div>
         </footer>
     </div>
-    <script src="scripts/script.js"></script>
 
+    <div class="dupa">
+
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/ajax_post.js"></script>
 </body>
 
 </html>
